@@ -1,20 +1,26 @@
 import { BrowserRouter, Route, Routes } from "react-router"
-import DashBoard from "./Pages/DashBoard"
-import NavigationBar from "./Components/NavigationBar"
-
+import DashBoard from "./Pages/DashBoard/DashBoard"
+import Analysis from "./Pages/Analysis/Analysis"
+import Files from "./Pages/Files/Files"
+import Notifications from "./Pages/Notifications/Notifications"
+import Settings from "./Pages/Settings/Settings"
+import Profile from "./Pages/Profile/Profile"
+import Friends from "./Pages/Friends/Friends"
+import NavigationBar from "./Components/NavigationBar/NavigationBar"
+import "./App.css"
 function App() {
-  return <div className="flex flex-row h-screen w-screen">
+  return <div className="page-container">
 
     <BrowserRouter >
-      <div className="flex flex-col justify-center flex-1">
+      <div className="page">
         <Routes>
           <Route path="/" element={<DashBoard />} />
-          <Route path="/analysis" element={<DashBoard />} />
-          <Route path="/files" element={<DashBoard />} />
-          <Route path="/friends" element={<DashBoard />} />
-          <Route path="/notifications" element={<DashBoard />} />
-          <Route path="/settings" element={<DashBoard />} />
-          <Route path="/profile" element={<DashBoard />} />
+          <Route path="/analysis" element={<Analysis />} />
+          <Route path="/files" element={<Files />} />
+          <Route path="/Friends" element={<Friends />} />
+          <Route path="/Notifications" element={<Notifications />} />
+          <Route path="/Settings" element={<Settings />} />
+          <Route path="/Profile" element={<Profile />} />
         </Routes>
       </div>
       <NavigationBar />

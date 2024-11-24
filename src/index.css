@@ -1,3 +1,26 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+html, body {
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0; 
+    margin: 0;
+    padding: 0;
+    scrollbar-width: none;
+    background-color: rgba(247,252,255,255);
+    /* overflow-x: hidden; */
+    /* overflow-y: hidden; */
+}
+
+@media screen and (orientation: portrait) {
+    body {
+        height: 100vh;
+        width: 100vw;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    body {
+        height: 100vh;
+        width: 100vw;
+    }
+}

@@ -1,0 +1,108 @@
+.nav-bar-Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(246,246,246,255);
+    border-radius: 10px;
+    padding: 1vh;
+    height: 90vh;
+    padding-top: 3vh;
+}
+
+.top-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    padding-bottom: 5vh;
+    gap: 2px;
+}
+
+.bottom-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom:8vh;
+    gap: 2px;
+}
+
+.site-logo {
+    background-image: url("../../../public/favicon.ico");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 2.5vw;
+    height: 2.5vw;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    animation: pulseAnimation 0.5s ease infinite;
+    /* Apply animation */
+}
+
+.menu-option-selected {
+    background-color: rgb(167, 165, 165);
+}
+
+.menu-option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10%;
+}
+
+.menu-option:hover {
+    background-color: rgb(167, 165, 165);
+}
+
+.upload {
+    display: flex;
+    background-color: rgba(20,118,157,255);
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10%;
+    padding: 5px;
+    height: 5vh;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    border: solid rgba(175,206,218,255);
+    border-width: 1px;
+}
+
+.upload:hover {
+    background-color: rgba(231,234,239,255);
+}
+
+.profile-picture {
+    background-image: url("../../../public/profileExample.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 2.5vw;
+    height: 2.5vw;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+.border-line-separator {
+    border-top: 1px solid rgba(237,237,238,255);
+    width: 70px;
+    height: 0;
+}
+
+h3{
+    font-size: small;
+    color: rgba(193,202,208,255);
+}

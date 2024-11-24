@@ -1,0 +1,14 @@
+.video-analysis {
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    align-items: center;
+    flex: 1
+}
+
+.dashboard-container {
+    grid-column: auto;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
