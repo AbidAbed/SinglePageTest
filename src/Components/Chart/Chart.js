@@ -30,7 +30,6 @@ function Chart() {
                         padding: 0,
                         labelStyle: { fontSize: 9 },
                         itemMarkHeight: 2,
-
                     },
                 }}
                 className="pie-chart"

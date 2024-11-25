@@ -1,0 +1,116 @@
+.analysis-details-list-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: rgba(255, 255, 255, 255);
+    border-radius: 20px;
+}
+
+
+.analysis-details-list-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+.analysis-details-list-header-label {
+    display: flex;
+    flex: 1;
+}
+
+.analysis-details-list-header-button {
+    display: flex;
+}
+
+
+.analysis-details-list-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px;
+}
+
+.analysis-details-list-content-item-container {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(239, 250, 254, 255);
+    color: black;
+    align-items: center;
+    padding: 2%;
+    border-radius: 50px;
+}
+
+
+.analysis-details-list-content-item-left {
+    display: flex;
+    flex: 1;
+}
+
+
+.analysis-details-list-content-item-right {
+    display: flex;
+    gap: 2px;
+    flex: 1;
+    justify-content: flex-start;
+}
+
+
+
+.all-analysis-child {
+    color: black;
+}
+
+.f-analysis {
+    display: flex;
+    flex-direction: row;
+    border-radius: 50px;
+    background-color: rgba(253, 224, 224, 255);
+    color: rgba(185, 127, 126, 255);
+    justify-content: center;
+    font-size: x-small;
+    padding-left: 15px;
+    padding-right: 15px;
+    gap: 3px;
+}
+
+.s-analysis {
+    display: flex;
+    flex-direction: row;
+    border-radius: 50px;
+    background-color: rgba(194, 236, 245, 255);
+    color: rgba(120, 179, 202, 255);
+    justify-content: center;
+    font-size: x-small;
+    padding-left: 15px;
+    padding-right: 15px;
+    gap: 3px;
+}
+
+.t-analysis {
+    display: flex;
+    flex-direction: row;
+    border-radius: 50px;
+    background-color: rgba(203, 255, 239, 255);
+    color: rgba(101, 176, 149, 255);
+    justify-content: center;
+    font-size: x-small;
+    padding-left: 15px;
+    padding-right: 15px;
+    gap: 3px;
+}
+
+.ff-analysis {
+    display: flex;
+    flex-direction: row;
+    border-radius: 50px;
+    background-color: rgba(247, 211, 254, 255);
+    color: rgba(225, 179, 235, 255);
+    justify-content: center;
+    font-size: x-small;
+    padding-left: 15px;
+    padding-right: 15px;
+    gap: 3px;
+}

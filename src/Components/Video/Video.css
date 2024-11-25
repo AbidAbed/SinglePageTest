@@ -2,4 +2,7 @@
     display: flex;
     border-radius: 2%;
     flex: 1;
+    max-width: 42VW;
+    max-height: 48VH;
+    
 }

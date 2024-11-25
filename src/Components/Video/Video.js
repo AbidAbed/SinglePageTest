@@ -1,7 +1,7 @@
 import "./Video.css"
 function Video() {
     return <div className="video-container">
-        <iframe width="100%" height="100%"
+        <iframe width="1000" height="1000"
         className="video-container"
             src="https://www.youtube.com/embed/HBH0473BYLk?list=RDHBH0473BYLk"
             title="YEAT - TAKEOVER [PROD. SANIKWAVE X SKY]"
