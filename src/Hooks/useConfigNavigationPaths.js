@@ -11,32 +11,32 @@ function useConfigNavigationPaths() {
         [
             {
                 path: "/",
-                icon: <RxDashboard  color="#89888c" />
+                icon: <RxDashboard  color="black" />
 
             },
             {
                 path: "/analysis",
-                icon: <AiOutlinePieChart  color="#89888c" />
+                icon: <AiOutlinePieChart  color="black" />
             },
             {
                 path: "/files",
-                icon: <FaRegFileLines  color="#89888c" />
+                icon: <FaRegFileLines  color="black" />
             },
             {
                 path: "/friends",
-                icon: <GoPeople  color="#89888c" />
+                icon: <GoPeople  color="black" />
             },
 
         ],
         [
             {
                 path: "/notifications",
-                icon: <IoNotificationsOutline  color="#89888c" />
+                icon: <IoNotificationsOutline  color="black" />
 
             },
             {
                 path: "/settings",
-                icon: <IoSettingsOutline  color="#89888c" />
+                icon: <IoSettingsOutline  color="black" />
             },
         ]
     ]

@@ -1,17 +1,17 @@
-import "./Video.css"
-function Video() {
-    return <div className="video-container">
-        <iframe width="1000" height="1000"
-        className="video-container"
-            src="https://www.youtube.com/embed/HBH0473BYLk?list=RDHBH0473BYLk"
-            title="YEAT - TAKEOVER [PROD. SANIKWAVE X SKY]"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+import "./Video.css";
 
-        </iframe>
-    </div>
+function Video() {
+    return (
+        <div className="video-container">
+            <video
+                controls
+                className="video"
+                src="https://www.w3schools.com/html/mov_bbb.mp4"
+            >
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    );
 }
 
-export default Video
-
+export default Video;

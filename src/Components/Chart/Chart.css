@@ -1,13 +1,15 @@
 .chart-container {
     display: flex;
     flex-direction: column;
-    background-color: rgba(255, 255, 255, 255);
+    background-color: #ffffff;
     padding: 2%;
     border-radius: 3%;
-    max-width: 24vw;
-    max-height: 43vh;
+    max-width: 30vw;
+    max-height: 40vh;
     flex: 1;
-
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
 }
 
 .pie-chart-container {
@@ -15,7 +17,8 @@
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    max-width: 600px;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .pie-chart {
@@ -23,22 +26,25 @@
     padding:10% ; */
     width: 100%;
     height: 100%;
-
+    color: rgba(168, 168, 168, 255);
 }
 
 
 
-h2 {
+.h1-chart {
     color: rgba(23, 24, 98, 255);
+    font-size: xx-large;
 }
 
-h1 {
+.h2-chart {
     color: rgba(157, 157, 157, 255);
+    font-size: smaller;
 }
 
 .score {
     justify-self: flex-start;
-    flex: 1
+    flex: 1;
+
 }
 
 .score-container {
@@ -46,6 +52,8 @@ h1 {
     flex-direction: row;
     justify-content: flex-start;
     max-height: 100px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
 }
 
 .hover-container {
@@ -82,7 +90,126 @@ h1 {
 }
 
 .border-line-separator1 {
-    border-top: 1px solid rgb(117, 115, 115);
+    border-top: 1px solid rgba(247, 247, 247, 255);
     width: 100%;
     height: 0px;
+}
+
+
+/* For max-width: 1200px */
+@media (max-width: 1200px) {
+    .chart-container {
+        max-width: 30vw;
+        max-height: 60vh;
+        padding: 3%;
+    }
+
+    .h1-chart {
+        font-size: 1.8rem;
+    }
+
+    .h2-chart {
+        font-size: 0.9rem;
+    }
+    .hover-info {
+        font-size: small;
+    }
+}
+
+/* For max-width: 992px */
+@media (max-width: 992px) {
+    .chart-container {
+        max-width: 28vw;
+        max-height: 45vh;
+        padding: 4%;
+    }
+
+    .h1-chart {
+        font-size: 1.6rem;
+    }
+
+    .h2-chart {
+        font-size: 0.85rem;
+    }
+
+    .score-container {
+        max-height: 80px;
+    }
+    .hover-info {
+        font-size: x-small;
+    }
+}
+
+/* For max-width: 768px */
+@media (max-width: 768px) {
+    .chart-container {
+        max-width: 30vw;
+        max-height: 45vh;
+        padding: 2%;
+    }
+
+    .h1-chart {
+        font-size: 1.4rem;
+    }
+
+    .h2-chart {
+        font-size: 0.8rem;
+    }
+
+    .score-container {
+        max-height: 70px;
+    }
+    .hover-info {
+        font-size: x-small;
+    }
+
+}
+
+/* For max-width: 576px */
+@media (max-width: 576px) {
+    .chart-container {
+        max-width: 33vw;
+        max-height: 36vh;
+        padding: 1%;
+    }
+
+    .h1-chart {
+        font-size: 1.0rem;
+    }
+
+    .h2-chart {
+        font-size: 0.7rem;
+    }
+
+    .score-container {
+        max-height: 45px;
+    }
+    .hover-info {
+        font-size: xx-small;
+    }
+
+}
+
+/* For max-width: 375px */
+@media (max-width: 375px) {
+    .chart-container {
+        max-width: 29vw;
+        max-height: 33vh;
+        padding: 1%;
+    }
+
+    .h1-chart {
+        font-size: 1rem;
+    }
+
+    .h2-chart {
+        font-size: 0.7rem;
+    }
+
+    .score-container {
+        max-height: 50px;
+    }
+    .hover-info {
+        font-size: xx-small;
+    }
 }

@@ -3,11 +3,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgba(246,246,246,255);
+    background-color: rgba(246, 246, 246, 255);
     border-radius: 10px;
     padding: 1vh;
-    height: 90vh;
+    /* height: 90vh; */
     padding-top: 3vh;
+    flex: 1;
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
 }
 
 .top-menu {
@@ -17,13 +20,14 @@
     flex: 1;
     padding-bottom: 5vh;
     gap: 2px;
+
 }
 
 .bottom-menu {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom:8vh;
+    padding-bottom: 8vh;
     gap: 2px;
 }
 
@@ -43,7 +47,7 @@
 }
 
 .menu-option-selected {
-    background-color: rgb(167, 165, 165);
+    background-color:  rgba(231, 234, 239, 255);
 }
 
 .menu-option {
@@ -58,12 +62,12 @@
 }
 
 .menu-option:hover {
-    background-color: rgb(167, 165, 165);
+    background-color:  rgba(231, 234, 239, 255);
 }
 
 .upload {
     display: flex;
-    background-color: rgba(20,118,157,255);
+    background-color: rgba(20, 118, 157, 255);
     color: white;
     border: none;
     outline: none;
@@ -74,12 +78,12 @@
     margin-top: 10px;
     align-items: center;
     justify-content: center;
-    border: solid rgba(175,206,218,255);
+    border: solid rgba(175, 206, 218, 255);
     border-width: 1px;
 }
 
 .upload:hover {
-    background-color: rgba(231,234,239,255);
+    background-color: #8abbcf;
 }
 
 .profile-picture {
@@ -94,15 +98,163 @@
     outline: none;
     cursor: pointer;
     border-radius: 100%;
+    transition: transform 0.5s ease-in-out; /* Smooth transition for rotation */
 }
 
+.profile-picture:hover {
+    transform: rotate(360deg); /* Spins the image */
+}
 .border-line-separator {
-    border-top: 1px solid rgba(237,237,238,255);
+    border-top: 1px solid rgba(237, 237, 238, 255);
     width: 70px;
     height: 0;
 }
 
-h3{
+.h1-nav {
     font-size: small;
-    color: rgba(193,202,208,255);
+    color: #aaafb5;
+}
+
+
+
+/* For max-width: 1200px */
+@media (max-width: 1200px) {
+    .site-logo {
+        width: 5vw;
+        height: 5vw;
+    }
+
+    .profile-picture {
+        width: 5vw;
+        height: 5vw;
+    }
+
+    .upload {
+        height: 6vh;
+    }
+
+    .h1-nav {
+        font-size: medium;
+    }
+
+    .nav-bar-Container {
+        padding: 2vh;
+    }
+}
+
+/* For max-width: 992px */
+@media (max-width: 992px) {
+    .site-logo {
+        width: 6vw;
+        height: 6vw;
+    }
+
+    .profile-picture {
+        width: 6vw;
+        height: 6vw;
+    }
+
+    .upload {
+        height: 7vh;
+    }
+
+    .h1-nav {
+        font-size: medium;
+    }
+
+    .nav-bar-Container {
+        padding: 2vh;
+    }
+}
+
+/* For max-width: 768px */
+@media (max-width: 768px) {
+    .site-logo {
+        width: 5vw;
+        height: 5vw;
+    }
+
+    .profile-picture {
+        width: 5vw;
+        height: 5vw;
+    }
+
+    .upload {
+        max-height: 5vh;
+        font-size: xx-small;
+        max-width: 10vw;
+    }
+    .border-line-separator{
+        max-width: 10vw;
+    }
+
+    .h1-nav {
+        font-size: x-small;
+    }
+
+    .nav-bar-Container {
+        padding: 3vh;
+    }
+}
+
+/* For max-width: 576px */
+@media (max-width: 576px) {
+    .site-logo {
+        width: 7vw;
+        height: 7vw;
+    }
+
+    .profile-picture {
+        width: 7vw;
+        height: 7vw;
+    }
+
+    .upload {
+        max-height: 5vh;
+        font-size: xx-small;
+        max-width: 10vw;
+    }
+    .border-line-separator{
+        max-width: 10vw;
+    }
+    .h1-nav {
+        font-size: x-small;
+        
+    }
+
+    .nav-bar-Container {
+        padding: 3vh;
+    }
+}
+
+/* For max-width: 375px */
+@media (max-width: 375px) {
+    .site-logo {
+        width: 10vw;
+        height: 10vw;
+    }
+
+    .profile-picture {
+        width: 10vw;
+        height: 10vw;
+    }
+
+    .upload {
+        height: 5vh;
+        max-width: 15vw;
+        font-size: x-small;
+    }
+
+    .h1-nav {
+        font-size: x-small;
+    }
+
+    .nav-bar-Container {
+        padding: 4vh;
+        max-width: 15vw;
+    }
+
+    .border-line-separator{
+        width: 40px;
+    }
 }

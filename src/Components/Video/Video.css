@@ -1,8 +1,85 @@
 .video-container {
     display: flex;
-    border-radius: 2%;
-    flex: 1;
-    max-width: 42VW;
-    max-height: 48VH;
-    
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden; /* Ensures no content spills out */
+    max-width: 41vw;
+    max-height: 46vh;
+    background-color: rgba(246, 246, 246, 255); /* Match design */
+}
+
+.video {
+    min-width: 41vw;
+    min-height: 46vh;
+    object-fit: cover; /* Ensures the video fills the container */
+    border-radius: 10px; /* Matches the container’s rounded corners */
+}
+
+
+/* Media Queries for Responsive Design */
+
+/* For max-width: 1200px */
+@media (max-width: 1200px) {
+    .video-container {
+        max-width: 50vw;
+        max-height: 59vh;
+    }
+
+    .video {
+        min-width: 40vw;
+        min-height: 59vh;
+    }
+}
+
+/* For max-width: 992px */
+@media (max-width: 992px) {
+    .video-container {
+        max-width: 50vw;
+        max-height: 50vh;
+    }
+
+    .video {
+        min-width: 40vw;
+        min-height: 50vh;
+    }
+}
+
+/* For max-width: 768px */
+@media (max-width: 768px) {
+    .video-container {
+        max-width: 50vw;
+        max-height: 50vh;
+    }
+
+    .video {
+        min-width: 40vw;
+        min-height: 50vh;
+    }
+}
+
+/* For max-width: 576px */
+@media (max-width: 576px) {
+    .video-container {
+        max-width: 46vw;
+        max-height: 39vh;
+    }
+
+    .video {
+        min-width: 40vw;
+        min-height: 37vh;
+    }
+}
+
+/* For max-width: 375px */
+@media (max-width: 375px) {
+    .video-container {
+        max-width: 46vw;
+        max-height: 30vh;
+    }
+
+    .video {
+        min-width: 46vw;
+        min-height: 30vh;
+    }
 }

@@ -23,7 +23,10 @@ function App() {
           <Route path="/Profile" element={<Profile />} />
         </Routes>
       </div>
-      <NavigationBar />
+      <div className="nav-bar">
+        <NavigationBar />
+      </div>
+
     </BrowserRouter>
   </div>
 }

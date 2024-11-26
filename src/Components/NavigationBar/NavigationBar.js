@@ -25,7 +25,7 @@ function NavigationBar() {
             <button className="upload">
                 {<IoIosAdd />} Upload
             </button>
-            <h3 className="">Menu</h3>
+            <h1 className="h1-nav">Menu</h1>
 
             {/** Menu Top*/}
 
@@ -52,7 +52,7 @@ function NavigationBar() {
             <hr className="border-line-separator" />
 
             {/** Menu Bottom Profile*/}
-            <h3>Profile</h3>
+            <h1 className="h1-nav">Profile</h1>
             <div
                 onClick={() => handleNavigation("/profile")}
                 className="profile-picture"

@@ -12,8 +12,8 @@ function Chart() {
     return <div className="chart-container">
         <div className="score-container ">
             <div className="score">
-                <h1>Score</h1>
-                <h2>{score}%</h2>
+                <h2 className="h2-chart">SCORE</h2>
+                <h1 className="h1-chart">{score}%</h1>
             </div>
             <div class="hover-container">
                 <p><FaInfoCircle color="#bdbdbd" /></p>
@@ -28,8 +28,8 @@ function Chart() {
                 slotProps={{
                     legend: {
                         padding: 0,
-                        labelStyle: { fontSize: 9 },
-                        itemMarkHeight: 2,
+                        labelStyle: { fontSize: 10, fontWeight: 'bold',fill:'#afafaf' },
+                        itemMarkHeight: 7,
                     },
                 }}
                 className="pie-chart"
